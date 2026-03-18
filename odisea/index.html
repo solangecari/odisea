@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Odisea</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css"/>
+
+  <meta name="description" content="Odisea: moda urbana y deportiva. Ropa de fútbol, baggys, jeans y más.">
+  <meta name="keywords" content="moda, ropa, odisea, deportivo, urbano, mujer, hombre, argentina">
+  <meta name="author" content="Odisea">
+  <meta name="theme-color" content="#444"> <!-- Color para móviles -->
+
+  <!-- Open Graph (para compartir en redes) -->
+  <meta property="og:title" content="Odisea - Moda Urbana y Deportiva">
+  <meta property="og:description" content="Descubrí los últimos estilos en ropa urbana y deportiva.">
+  <meta property="og:image" content="img/logo-odisea.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tusitio.com"> 
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="img/logo-odisea.png" alt="Logo Odisea" class="logo">
+      <h1>Odisea</h1>
+      <nav class="side-menu-container">
+  <div class="side-menu-container">
+    <button class="menu-btn">☰ Categorías</button>
+
+    <div id="sideMenu" class="side-menu">
+      <button class="close-btn">&times;</button>
+      <h3>Categorías</h3>
+
+      <a href="#" onclick="mostrarCategoria('futbol')">Fútbol</a>
+
+      <div class="submenu-lateral">
+        <button class="submenu-btn-lateral">Deportivo Mujer ▾</button>
+        <div class="submenu-content-lateral">
+          <a href="#" onclick="mostrarCategoria('remeras')">Remeras</a>
+          <a href="#" onclick="mostrarCategoria('conjuntos')">Conjuntos</a>
+          <a href="#" onclick="mostrarCategoria('calzas')">Calzas</a>
+          <a href="#" onclick="mostrarCategoria('bikers')">Biker-Short</a>
+          <a href="#" onclick="mostrarCategoria('tops')">Tops</a>
+        </div>
+      </div>
+
+      <a href="#" onclick="mostrarCategoria('baggys')">Baggys</a>
+      
+      <div class="submenu-lateral">
+        <button class="submenu-btn-lateral"> Jeans ▾</button>
+        <div class="submenu-content-lateral">
+      <a href="#" onclick="mostrarCategoria('jeansmujer')">Jeans Mujer</a>
+      <a href="#" onclick="mostrarCategoria('jeanshombre')">Jeans Hombre</a>
+
+      </div>
+
+      <a href="#" onclick="mostrarCategoria('remerasHombre')">Remeras Hombre</a>
+      <a href="#" onclick="mostrarCategoria('remerasMujer')">Remeras Mujer</a>
+    </div>
+  </div>
+    </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section id="carousel" class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="img/futbool.jpg" alt="Fútbol">
+          <p>Equipos de fútbol</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/mujerdeportivo.jpg" alt="Deportiva Mujer">
+          <p>Ropa deportiva de mujer</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/cargobaggy.jpg" alt="Baggys">
+          <p>Baggys</p>
+        </div>
+        <div class="carousel-item">
+          <img src="img/remera.jpg" alt="Remeras Hombre">
+          <p>Remeras de hombre</p>
+        </div>
+      </div>
+    </section>
+    <section id="productos" class="muestrario"></section>
+    <button id="btnVolver" onclick="mostrarInicio()" style="display:none;">Volver al Inicio</button>
+ </main>
+
+  <footer>
+    <div class="footer-section">
+      <h4>Contáctanos</h4>
+      <p>
+      Instagram:
+      <a href="https://www.instagram.com/odisea__4" target="_blank">@odisea__4</a>
+    </p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Odisea. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
